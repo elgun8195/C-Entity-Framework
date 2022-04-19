@@ -1,4 +1,5 @@
-﻿using C_Sharp_Entity_Framework.Models;
+﻿
+using C_Sharp_Entity_Framework.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,8 +12,8 @@ namespace C_Sharp_Entity_Framework.DAL
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            string connectionString = "Data Source=ACER;Initial Catalog=Entity;Integrated Security=true";
-            optionsBuilder.UseSqlServer(connectionString);
+            
+            optionsBuilder.UseSqlServer(Connection.connectionString);
             
         }
         public DbSet<Post> Posts { get; set; }

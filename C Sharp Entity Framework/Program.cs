@@ -12,36 +12,36 @@ namespace C_Sharp_Entity_Framework
     {
         static void Main(string[] args)
         {
-            //AddPost();
+            AddPost();
             //GetAllPost();
 
 
-            try
-            {
-                EditPostByTitle(5, "Elgusn");
-            }
-            catch (NullReferenceException ex)
-            {
-                throw new NullReferenceException(ex.Message);
-            }
-            catch (NotFoundException ex)
-            {
-                throw new NotFoundException(ex.Message);
-            }
+            //try
+            //{
+            //    EditPostByTitle(5, "Elgusn");
+            //}
+            //catch (NullReferenceException ex)
+            //{
+            //    throw new NullReferenceException(ex.Message);
+            //}
+            //catch (NotFoundException ex)
+            //{
+            //    throw new NotFoundException(ex.Message);
+            //}
 
-            try
-            {
-                DeletePostById(1);
-            }
-            catch (NullReferenceException ex)
-            {
+            //try
+            //{
+            //    DeletePostById(1);
+            //}
+            //catch (NullReferenceException ex)
+            //{
 
-                throw new NullReferenceException(ex.Message);
-            }
-            catch (NotFoundException ex)
-            {
-                throw new NotFoundException(ex.Message);
-            }
+            //    throw new NullReferenceException(ex.Message);
+            //}
+            //catch (NotFoundException ex)
+            //{
+            //    throw new NotFoundException(ex.Message);
+            //}
 
             try
             {
